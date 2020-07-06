@@ -1,9 +1,7 @@
 {
   "name": "react-sdesign",
   "version": "0.1.0",
-  "engines": {
-    "node": "10.16.3"
-  },
+  
   "private": true,
   "scripts": {
     "dev": "next",
