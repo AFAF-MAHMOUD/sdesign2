@@ -1,0 +1,763 @@
+
+import Layout from "../components/layout";
+const Studio = () => (
+  <Layout>
+    <div className="section-padding section-found-your-future " id="studio">
+      <div className="container text-center" >
+        <div className="row text-center">
+          <div className="col-md-12 text-center">
+            <div className="qui-sommes-nous" id="qui-sommes-nous" style={{ marginTop: "40px" }}>
+              <h3 style={{ marginTop: "130px" }} >Qui sommes-nous</h3>
+              <p > S’design est une agence de conception d’espaces évènementiels. Nous vous proposons des solutions globales
+              qui va de l’étude du projet à la conception jusqu’à la construction. Nous nous occupons de la conception
+              des installations éphémères ou réutilisables dans le secteur de l’évènementiel tel que stand pour les
+              foires, Aménagement pour expositions et musées, installation pour congrès et séminaires.
+              Notre processus créatif élabore des concepts grâce à notre équipe d’architecte et de graphiste et grâce à
+              nos partenaires spécialisés. Nous maitrisons l’ensemble du processus de développement technique et
+              d’industrialisation de votre produit.
+              Notre agence est jeune mais riche d’expériences et d’un savoir-faire nécessaire pour répondre aux
+              contraintes techniques d’un salon, nous mettons son savoir-faire au service des entreprises pour leur
+                communication évènementielle. </p>
+            </div>
+          </div>
+        </div>
+        <div className="notre-equipe text-center " id="notre-equipe"  >
+          <h3 className="text-center">Notre équipe</h3>
+          <div className="row text-center ">
+            <div className="card">
+              <img src="https://www.dynamique-mag.com/wp-content/uploads/5f59b6514e303b69e21b0708e815982a-780x405.jpg" />
+              <div className="container">
+                <h4>Karim SAHBANI</h4>
+                <div className="title">Architecte et General- Manager</div>
+              </div>
+            </div>
+            <div className="card">
+              <img src="https://londonglossy.com/wp-content/uploads/2020/03/1c3bfe11-c96f-4608-b2e0-6c37f0f845aa_1145511_TABLET_LANDSCAPE_LARGE_16_9.jpg" />
+              <div className="container">
+                <h4>Waad Bousserwel</h4>
+                <div className="title">Assistante de Direction</div>
+              </div>
+            </div>
+            <div className="card">
+              <img src="https://www.dynamique-mag.com/wp-content/uploads/5f59b6514e303b69e21b0708e815982a-780x405.jpg" />
+              <div className="container">
+                <h4>Aziz Drira</h4>
+                <div className="title">Graphiste</div>
+              </div>
+            </div>
+            <div className="card">
+              <img src="https://www.dynamique-mag.com/wp-content/uploads/5f59b6514e303b69e21b0708e815982a-780x405.jpg" />
+              <div className="container">
+                <h4>Issam Selmi</h4>
+                <div className="title">Graphiste</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <style jsx>
+      {`
+*{
+  box-sizing: border-box;
+    font-size: 12px;
+  }
+  
+  
+ .navbar{
+     margin-top:0px !important;
+ }                 
+  .section-padding {
+    padding: 50px;
+    margin-top: 12px;
+  }
+
+  .section-padding img {
+    max-width: 100%;
+    height: 500px;
+
+  }
+  .section-padding  h3{
+    font-size: 25px;
+  }
+  .section-padding .col-md-12 {
+    padding: 0;
+    margin:5px;
+  }
+
+ 
+
+  .section-padding .h1 {
+    margin: 16px;
+  }
+
+  .section-padding p {
+    margin: 20px 200px;
+    line-height: 1.8;
+    font-size: 12px;
+    text-align: justify;
+    margin-bottom:100px;
+  }
+
+  .section-padding span {
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  /*our team style*/
+  html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+ 
+  float: left;
+  width: 50%;
+
+  margin-bottom: 20px;
+  padding: 20px 20px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    
+    display: block;
+  }
+}
+
+.card {
+  padding-bottom: 50px;
+  width: 500px;
+ height: 400px;
+  margin: 20px auto;
+ 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.card img{
+  margin: 40px auto;
+  width: 200px;
+ height: 200px;
+ border-radius:10px;
+
+  
+ 
+}
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+
+ 
+`}
+    </style>
+  </Layout>
+)
+export default Studio;
+/*
+homepage
+import CustomLayout from "../components/CustomLayout.js";
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import jobin from "../images/jobin.jpg";
+import phonac from "../images/phonac.jpg";
+import mubawab from "../images/mubawab.jpg";
+import defile3d from "../images/3ddefilé.jpg";
+
+
+const Index = (props) => {
+  const [home, setHome] = useState([]);
+  return(
+    <CustomLayout>
+
+    <div className="upper-bar">
+      <div className="container">
+        <div className="row icons">
+
+          <div className="col-sm text-right infos text-center text-sm-right">
+            <span><a href="#"><i className="fa fa-linkedin" aria-hidden="true"></i></a></span>
+            <span><i className="fa fa-phone" aria-hidden="true"></i></span>
+          <span> <a href="#"><i className="fa fa-facebook" aria-hidden="true"></i></a></span>
+        </div>
+
+      </div>
+   
+    </div>
+</div>
+  <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+    <ol className="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+
+    </ol>
+    <div className="carousel-inner" role="listbox">
+
+      <div className="carousel-item  active" style={{
+        backgroundImage: "url(" `${require("../images/camera7.jpg")}` + ")"
+      }} >
+
+      </div>
+
+      <div className="carousel-item " style={{
+        backgroundImage: "url(" + `${require("../images/Camera9.jpg")}` + ")"
+      }}>
+
+      </div>
+
+
+      <div className="carousel-item" style={{
+        backgroundImage: "url(" + `${require("../images/3d.jpg")}` + ")"
+      }} >
+
+      </div>
+    </div>
+    <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span className="sr-only">Previous</span>
+    </a>
+    <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span className="carousel-control-next-icon" aria-hidden="true"></span>
+      <span className="sr-only">Next</span>
+    </a>
+  </div>
+  <section className="section-padding section-found-your-future text-center" id="domaine-intervention">
+    <div className="container">
+      <h2 className="section-title">Stand</h2>
+
+      <div className="path-style">
+        <p>
+          Stand d'exposition pour foires Une foire est une manifestation commerciale regroupant des exposants qui
+          rencontrent le grand public ou des professionnels afin de leur présenter leurs produits. Le stand est l'espace
+          de rencontre exposants/ visiteurs. Dans ce plateau aussi compétitif, attirer du monde à son stand peut
+          représenter un véritable défi. Faire un beau stand attractif est donc le point de départ pour le succès de
+          votre entreprise.
+        </p>
+
+
+      </div>
+    </div>
+
+  </section>
+  <div className="parallax-one"></div>
+  <section className="section-padding section-found-your-future text-center" id="evennementiel">
+    <div className="container">
+      <h2 className="section-title">Congrès et séminaires</h2>
+
+      <div className="path-style">
+
+        <p>
+          Organisez votre conférence, événement professionnel, lancement produit, colloque, séminaire, défilés, salons
+          commerciaux, inaugurations, lancements de produits ou tout autre événement d’entreprise, notre agence analyse
+          vos besoins en terme d'espace, d'affichages et d'équipement. Nos installations modulaires, légères et rapides
+          à installer, nos aménagements de mobiliers et notre équipe sauront concevoir pour vous un événement réussit et
+          à votre image.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+  <div className="parallax-two"></div>
+
+  <section className="section-padding section-found-your-future text-center" id="expositions">
+    <div className="container">
+      <h2 className="section-title">Expositions et musées</h2>
+
+      <div className="path-style">
+
+        <p>
+          Une galerie est un endroit, public ou privé, aménagé spécifiquement pour exposer des produits temporairement.
+          Elle a un but d’exposition simple pour faire découvrir des œuvres d’artistes mais aussi pour proposer à la
+          vente des œuvres d’art. Les expositions sont des organisations éphèmères, installées dans un espace extérieur
+          ou intérieur pour une durée limité dans le temps. Elles demandent des structures légères afin d'architecturer
+          l'espace et en créer une disposition adaptée à la nature et le but de l'évènnement. Notre strucutre modulaire
+          et légère et notre savoir faire, en qualité de conception d'espace, ne pouvons que vous garantir une
+          éfficacité des idées originales et de prestations de qualité adéquate à la nature de votre évènnement.
+        </p>
+
+      </div>
+    </div>
+
+  </section>
+  <div className="parallax-three"></div>
+
+
+  <section className="section-padding section-found-your-future text-center" id="defilé">
+    <div className="container">
+      <h2 className="section-title">Défilé de mode </h2>
+
+      <div className="path-style">
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero neque veniam quidem rem, est, fugiat, officia
+          delectus blanditiis nobis nemo voluptate mollitia porro repellendus expedita sed odio inventore doloribus
+          dolorem.
+        </p>
+
+      </div>
+    </div>
+
+  </section>
+  <div className="parallax-four"></div>
+  <h2 className="nosclient-title">NOS CLIENTS</h2>
+  <div className="nos-client">
+
+    <div className="carousel slide" data-ride="carousel">
+
+      <div className="carousel-inner">
+
+        <div className="container">
+
+          <div className="carousel-item active">
+            <div className="row">
+              <div className="col-sm"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg" alt="1 slide" />
+              </div>
+              <div className="col-sm"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg" alt="2 slide" />
+              </div>
+              <div className="col-sm"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg" alt="3 slide" />
+              </div>
+              <div className="col-sm"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg" alt="5 slide" />
+              </div>
+              <div className="col-sm"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg" alt="6 slide" />
+              </div>
+
+            </div>
+          </div>
+          <div className="carousel-item">
+            <div className="row">
+              <div className="col-sm"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg" alt="1 slide" />
+              </div>
+              <div className="col-sm"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg" alt="2 slide" />
+              </div>
+              <div className="col-sm"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg" alt="3 slide" />
+              </div>
+              <div className="col-sm"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg" alt="5 slide" />
+              </div>
+              <div className="col-sm"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg" alt="6 slide" />
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <style jsx>
+    {`
+    .upper-bar .infos {
+    position: absolute;
+    margin: 15px 0;
+    top: -60px;
+    right: 100px;
+  }
+
+   .upper-bar {
+    align-items: center;
+  }
+
+  .upper-bar .icons i {
+    margin-left: 15px;
+    line-height: 2;
+    color: gray;
+    text-align: center;
+    background-color: black;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+
+  }
+
+            *{
+                box-sizing: border-box;
+            }
+  .carousel {
+    z-index: 1;
+    padding-top: 0;
+  }
+  .carousel-item {
+
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+  }
+  .section-padding .section-title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: bukralight;
+    color: red;
+    text-transform: uppercase;
+    font-size: xx-large;
+  }
+
+  .section-padding p {
+    margin: 20px 200px;
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: bukralight;
+    padding-bottom: 30px;
+    text-align: justify;
+
+  }
+  .parallax-one {
+    min-height: 400px;
+    
+    background-image: url(${jobin});
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax-two {
+    min-height: 400px;
+    /* The image used */
+    background-image: url(${phonac});
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax-three {
+    min-height: 400px;
+    /* The image used */
+    background-image:  url(${mubawab});
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax-four {
+    min-height: 400px;
+    /* The image used */
+    background-image:  url(${defile3d});
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .nosclient-title{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: bukralight;
+    color: red;
+    text-transform: uppercase;
+    font-size: 25px;
+    text-align: center;
+  }
+.nos-client .carousel .carousel-inner{
+text-align: center;
+    height: 250px;
+}
+.carousel .carousel-inner .carousel-item img{
+    margin-top: 60px;
+    height: 150px;
+    border:1px solid red;
+    width: 150px;
+    border-radius: 50%;
+  
+}
+         `}
+
+  </style>
+
+    </CustomLayout >
+  )
+ 
+}
+Index.getInitialProps = async ({ req }) => {
+
+  const wordpressUrl = "https://limitless-shore-58551.herokuapp.com/wp-json";
+  const home = await axios.get(`${wordpressUrl}/wp/v2/pages?slug=home`);
+  console.log("slug", home.data[0].title.rendered)
+  console.log("our data home", home)
+
+  return { home: home.data[0] }
+
+}
+export default Index;
+ */
+
+
+
+
+
+ import Link from "next/Link";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React, {useEffect , useState} from "react";
+import axios from 'axios';
+
+/*var logo=document.getElementById("logo");
+    window.onscroll=function(){
+  
+    console.log(window.pageYOffset)
+    if(window.pageYOffset  < 100){
+       logo.style.display="block"
+    }else{
+        logo.style.display="none"
+    }
+
+    }
+    */
+const CustomNavbar = (props) => {
+  const[menu ,setMenu]=useState([])
+  
+  return(<nav className="navbar navbar-expand-lg navbar-light  fixed-top">
+    
+  <div className="upper-bar">
+    <div className="container">
+      <div className="row icons">
+
+        <div className="col-sm text-right infos text-center text-sm-right">
+          <span><a href="#"><i className="fa fa-linkedin" aria-hidden="true"></i></a></span>
+          <span><i className="fa fa-phone" aria-hidden="true"></i></span>
+          <span> <a href="#"><i className="fa fa-facebook" aria-hidden="true"></i></a></span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+      <div className="container">
+          <Link href="/">
+              <div className="logo"id ="logo">
+                  <a className="navbar-brand" >
+                      <img src={require('../images/logo.png')} />
+                  </a>
+              </div>
+          </Link>
+
+
+          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+              aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon"></span>
+          </button>
+
+
+
+          <div className="collapse navbar-collapse" id="navbarResponsive">
+              <span className="logo-text"> AGENCE DE DESIGN D’ESPACES EVENEMENTIELS </span>
+              <ul className="navbar-nav ml-auto">
+                  <Link href="/">
+                      <li className="nav-item active">
+                          <a href='/' className="nav-link">Home
+              <span className="sr-only">(current)</span>
+                          </a>
+                      </li>
+                  </Link>
+
+
+                  <Link href="/studio">
+                      <li className="nav-item dropdown">
+                          <a href="/studio" className="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Studio </a>
+                          <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
+                              <Link href="/studio#qui-sommes-nous"  ><a className="dropdown-item">Qui sommes-nous</a></Link>
+                              <Link href="/studio#notre-equipe" ><a className="dropdown-item">Notre équipe</a></Link>
+                          </div>
+                      </li>
+                  </Link>
+
+                  <Link href="/services">
+                      <li className="nav-item dropdown">
+                          <a href="/services" className="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Services </a>
+                          <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
+                              <Link href="/services"  ><a className="dropdown-item">Etude de projet</a></Link>
+                              <Link href="/services#conception" ><a className="dropdown-item">Conception et aménagement des espaces évènnementiels</a></Link>
+                              <Link href="/services#fabrication"  ><a className="dropdown-item">Fabrication de stand sur mesure</a></Link>
+                              <Link href="/services#location" ><a className="dropdown-item">Location de stand modulaire</a></Link>
+                              <Link href="/services#serv"  ><a className="dropdown-item">Services annexes pour events</a></Link>
+                              <Link href="/services#logistique" ><a className="dropdown-item" >Logistique</a></Link>
+                          </div>
+                      </li>
+                  </Link>
+
+
+                  <Link href="/realisation">
+                      <li className="nav-item">
+                          <a href="/realisation" className="nav-link" >Realisation</a>
+                      </li>
+                  </Link>
+
+                  <Link href="/simulation">
+                      <li className="nav-item">
+                          <a className="nav-link">Simulation 3D</a>
+                      </li>
+                  </Link>
+
+                  <Link href="/contact">
+                      <li className="nav-item">
+                          <a href="/contact" className="nav-link" >Contact</a>
+                      </li>
+                  </Link>
+              </ul>
+          </div>
+      </div>
+
+    
+
+ 
+  
+  <style jsx>{`
+                                                                                         
+                                                                                          
+  *{
+      font-size: 12px;
+      box-sizing: border-box;
+  }
+  .navbar .upper-bar .infos {
+  position: absolute;
+  margin: 15px 0;
+  top: -60px;
+  right: 20px;
+}
+
+.navbar .upper-bar {
+  align-items: center;
+}
+
+.navbar .upper-bar .icons i {
+  margin-left: 15px;
+  line-height: 2;
+  color: gray;
+  text-align: center;
+  background-color: black;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+
+}
+
+
+.navbar {
+  background-color: rgba(0, 0, 0, .4);
+  height: 50px;
+  margin-bottom: 0;
+  margin-top: 60px;
+
+}
+
+.navbar .nav-link,
+.navbar .logo-text {
+  color: #F5F5F5 !important;
+  font-weight: 300;
+  font-size: 18px;
+
+
+}
+.navbar .logo-text{
+  letter-spacing: 2px;
+}
+.navbar .navbar-brand img {
+  width: 250px;
+  border: 0;
+  display: block;
+  position: absolute;
+  top: 55px;
+  left: 55px;
+}
+.navbar-nav .dropdown-menu {
+  background: transparent;
+  position: static;
+  float: none;
+
+}
+.dropdown-item {
+ 
+background-color: rgba(0, 0, 0, .4);
+  margin-bottom: 2px;
+  color: white;
+  display: block;
+  width: 100%;
+  padding: .25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  text-align: inherit;
+  white-space: nowrap;
+
+  border: 0;
+  font-size: 15px;
+}
+
+.dropdown-menu.show {
+  border: none;
+}
+
+.navbar-nav .dropdown-menu {
+  position: absolute;
+}
+.dropdown{
+  position:relative;
+}
+
+
+@media(max-width:576px) {
+  .upper-bar .infos:first-child {
+    margin-bottom: 0;
+  }
+}
+
+
+`}
+</style>
+
+
+
+
+</nav >)
+
+    
+
+
+}
+  
+
+
+CustomNavbar.getInitialProps = async ({ req }) => {
+
+  const wordpressUrl = "https://limitless-shore-58551.herokuapp.com/wp-json";
+  const menu = await axios.get(`${wordpressUrl}/menus/v1/menus/navbar`);
+  console.log("slug",  menu.data[0].title.rendered)
+  console.log("menu:", menu)
+
+  return { menu: menu.data[0] }
+
+}
+
+
+export default  CustomNavbar;
+
+
+                 

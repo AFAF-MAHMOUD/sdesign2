@@ -1,0 +1,1 @@
+!function(n,e){e(n).ready(function(){e(".button-menu").on("click",function(){e(".menu-icon").toggleClass("open"),e(this).parents().find(".header-nav").toggleClass("align-items-center")})})}((window,document),jQuery);
